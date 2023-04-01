@@ -43,7 +43,7 @@ class MyHomePage extends StatefulWidget {
 //whisper API request
 Future<String> transcribeAudio(String filePath) async {
 
-  const apiKey = "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";
+  const apiKey = "";
   var url = Uri.https("api.openai.com", "v1/audio/transcriptions");
   var request=http.MultipartRequest('POST', url);
   request.headers.addAll(({
